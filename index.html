@@ -1,61 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Jogo da Memória</title>
-</head>
-<body>
+  </head>
+  <body>
+    <audio id="song" controls style="display:none" autoplay loop>
+        <source src="./assets/sounds/177_Tavern_Music.mp3" type="audio/mpeg">
+      </audio>
+    
     <main class="memory-game">
-        <div class="card" data-card="anao">
-            <img src="./assets/img/Anao.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div><div class="card" data-card="assassino">
-            <img src="./assets/img/Assassino.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="demon">
-            <img src="./assets/img/Demon.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="elfo">
-            <img src="./assets/img/Elfo.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="guerreiro">
-            <img src="./assets/img/Guerreiro.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="maga">
-            <img src="./assets/img/Maga.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="anao">
-            <img src="./assets/img/Anao.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div><div class="card" data-card="assassino">
-            <img src="./assets/img/Assassino.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="demon">
-            <img src="./assets/img/Demon.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="elfo">
-            <img src="./assets/img/Elfo.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="guerreiro">
-            <img src="./assets/img/Guerreiro.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>
-        <div class="card" data-card="maga">
-            <img src="./assets/img/Maga.png" alt="face da carta" class="card-front">
-            <img src="./assets/img/Escudo.png" alt="verso da carta" class="card-back">
-        </div>        
+      <div class="card" data-card="anao">
+        <img
+          src="./assets/img/ArcherPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="assassino">
+        <img
+          src="./assets/img/DemonPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="demon">
+        <img
+          src="./assets/img/MagePixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="elfo">
+        <img
+          src="./assets/img/MagoPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="guerreiro">
+        <img
+          src="./assets/img/NewDemonPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="maga">
+        <img
+          src="./assets/img/WarriorPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="anao">
+        <img
+          src="./assets/img/ArcherPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="assassino">
+        <img
+          src="./assets/img/DemonPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="demon">
+        <img
+          src="./assets/img/MagePixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="elfo">
+        <img
+          src="./assets/img/MagoPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="guerreiro">
+        <img
+          src="./assets/img/NewDemonPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
+      <div class="card" data-card="maga">
+        <img
+          src="./assets/img/WarriorPixel.gif"
+          alt="face da carta"
+          class="card-front"
+        />
+        <img
+          src="./assets/img/escudoGif.gif"
+          alt="verso da carta"
+          class="card-back"
+        />
+      </div>
     </main>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
